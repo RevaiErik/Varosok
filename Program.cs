@@ -14,7 +14,7 @@ using (StreamReader be = new StreamReader(path:"../../../src/varosok.csv", encod
 
 Console.WriteLine($"A kollekció hossza: {varosok.Count()}");
 //1. feladat
-Console.WriteLine($"1. feladat \n Kínai nagyvárosokban összesen {varosok.Where(o => o.Orszag == "Kína").Sum(f => f.Nepesseg):.00} millió fő él");
+Console.WriteLine($"1. feladat \n Kínai nagyvárosokban összesen {varosok.Where(o => o.Orszag == "Kína").Sum(f => f.Nepesseg)} millió fő él");
 //2. feladat
 Console.WriteLine($"2. feladat \n Az indiai nagyvárosok átlaglélekszáma: {varosok.Where(o => o.Orszag == "India").Average(f => f.Nepesseg)}");
 //3. feladat

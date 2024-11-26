@@ -23,7 +23,7 @@ namespace Varosok
 
         public override string ToString()
         {
-            return $"{Varos_nev} ({Orszag})\t {Nepesseg}M fő";
+            return $"{Varos_nev} ({Orszag})\t {Nepesseg:.00}M fő";
         }
     }
 }
